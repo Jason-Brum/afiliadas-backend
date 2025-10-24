@@ -1,60 +1,83 @@
-<<<<<<< HEAD
-HELP.md
+# =========================
+# Build e dependências
+# =========================
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+!gradle/wrapper/gradle-wrapper.jar
 
-### VS Code ###
-.vscode/
-=======
-# Compiled class file
-*.class
-
-# Log file
+# Arquivos de log
 *.log
+*.out
+*.tmp
 
-# BlueJ files
-*.ctxt
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+out/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# =========================
+# Eclipse
+# =========================
+.classpath
+.project
+.settings/
+bin/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# =========================
+# VS Code
+# =========================
+.vscode/
+.history/
+*.code-workspace
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
->>>>>>> 88f3f7b3a04cc4d4ba0962933e1e8a7a7fedea28
+# =========================
+# SO (Windows, macOS, Linux)
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# =========================
+# Sistema de controle de versão
+# =========================
+*.orig
+*.rej
+
+# =========================
+# Arquivos de ambiente / credenciais
+# =========================
+.env
+*.env
+application-*.yml
+application-*.properties
+application-local.yml
+application-local.properties
+
+# =========================
+# Testes e relatórios
+# =========================
+/test-output/
+/surefire-reports/
+/jacoco/
+*.exec
+*.coverage
+*.hprof
+
+# =========================
+# Outras ferramentas
+# =========================
+.gradle/
+mvnw
+mvnw.cmd
+
+# =========================
+# Node (se houver front embutido)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
